@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Museum | Services</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-content-title {
+            padding: 0 !important;
+            margin: 2em;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 2.0em;
+            letter-spacing: 1px;
+            padding: 40px;
+            color: white;
+        }
+
+        .gallery-image {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-image img {
+            height: 250px;
+            width: 350px;
+            transform: scale(1.0);
+            transition: transform 0.4s ease;
+        }
+
+        .img-box {
+            box-sizing: content-box;
+            margin: 10px;
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+            display: inline-block;
+            color: white;
+            position: relative;
+            background-color: white;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 5px;
+            left: 20px;
+            opacity: 0.0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .transparent-box {
+            height: 250px;
+            width: 350px;
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .img-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .img-box:hover .transparent-box {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .img-box:hover .caption {
+            transform: translateY(-20px);
+            opacity: 1.0;
+        }
+
+        .img-box:hover {
+            cursor: pointer;
+        }
+
+        .caption>p:nth-child(2) {
+            font-size: 0.8em;
+        }
+
+        .opacity-low {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-container"></div>
+    <div class="content-container">
+        <nav>
+            <div class="site-title">
+                <h1>Museum</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="More about the museum">About</a></li>
+                <li><a href="services.html" title="Services offered">Services</a></li>
+                <li><a href="contact.html" title="Reach out to us">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="page-content-title">
+                <h1>Flower Galleria</h1>
+            </div>
+
+            <div class="page-content">
+                <div class="gallery-image">
+                    <div class="img-box">
+                        <img src="static/images/bougainvillea.jpg" alt="bougainvillea" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Bougainvillea</p>
+                                <p class="opacity-low">
+                                    A favorite in tropical locales, this colorful climber can also be grown annually 
+                                    if you don't happen to live in a sunny spot. Bougainvillea can grow 20–30 feet tall and wide, 
+                                    and its beautiful color-saturated flowers make a major impact.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="static/images/wisteria.jpg" alt="wisteria" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Wisteria</p>
+                                <p class="opacity-low">
+                                    If there was ever a flower to make you feel like you've wandered into a Jane Austen novel, 
+                                    wisteria is it. Not only does this climbing vine look romantic, it smells amazing too and 
+                                    will fill the space with color and fragrance. 
+                                    Be sure to opt for a North American species if you live in the states.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="static/images/cosmos.jpg" alt="cosmos" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Cosmos</p>
+                                <p class="opacity-low">
+                                    Wispy and delicate, these daisy-shaped flowers seem almost weightless 
+                                    stop their super-long stems (which can grow up to 60 inches tall! Stake them for added support). 
+                                    Wedding florists love to tuck them into otherwise staid bouquets for a bit of happy whimsy; 
+                                    you should do the same for tabletop arrangements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="static/images/gardenia.jpg" alt="gardenia" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Gardenia</p>
+                                <p class="opacity-low">
+                                    Known for its rich scent, this waxy flower with glossy thick leaves 
+                                    is often used in perfumes. 
+                                    An evergreen shrub that can grow 8 feet tall, 
+                                    gardenias grow best in humid areas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="static/images/alstroemerias.jpg" alt="alstroemerias" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Alstroemerias</p>
+                                <p class="opacity-low">
+                                    Typically called Peruvian lilies, they come in bright colors like pink, orange, and purple. 
+                                    Alstroemerias easy to grow and don't require a ton of care. 
+                                    Great for flower bouquets, they last up to two weeks once cut.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="static/images/anemone.jpg" alt="anemone" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Anemone</p>
+                                <p class="opacity-low">
+                                    While there are many varieties of anemone out there, 
+                                    this type can most often be spotted thanks to their wide black centers, 
+                                    which provide striking contrast to red, purple, and white petals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <span>Copyright &copy; 2023. ALL OF THE RIGHTS RESERVED</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
